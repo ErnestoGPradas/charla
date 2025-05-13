@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>¡ALERTA! Sistema Infectado</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: sans-serif;
@@ -33,6 +35,21 @@
             from { opacity: 1; }
             to { opacity: 0.5; }
         }
+
+        /* Estilos para pantallas más pequeñas (móviles) */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px; /* Reduce un poco el padding en móviles */
+            }
+            h1 {
+                font-size: 2.5em; /* Aumenta el tamaño del título en móviles */
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 1.5em; /* Aumenta el tamaño del párrafo en móviles */
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -43,11 +60,8 @@
         <p>(Esto es solo una broma 😉)</p>
     </div>
     <script>
-        // Puedes añadir efectos de sonido o animaciones más complejas aquí si lo deseas
         console.error("¡SISTEMA INFECTADO!");
-        // Por ejemplo, un sonido (necesitarías el archivo de audio)
-        // const audio = new Audio('sonido_alarma.mp3');
-        // audio.play();
+        // Aquí podrías añadir más JavaScript si lo deseas
     </script>
 </body>
 </html>
