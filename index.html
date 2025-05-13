@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>¡ALERTA! Sistema Infectado</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: black;
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(255, 0, 0, 0.1);
+            padding: 40px;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: blink 1s infinite alternate;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡PELIGRO!</h1>
+        <p>¡Su sistema ha sido infectado!</p>
+        <p>Toda su información está en riesgo.</p>
+        <p>(Esto es solo una broma 😉)</p>
+    </div>
+    <script>
+        // Puedes añadir efectos de sonido o animaciones más complejas aquí si lo deseas
+        console.error("¡SISTEMA INFECTADO!");
+        // Por ejemplo, un sonido (necesitarías el archivo de audio)
+        // const audio = new Audio('sonido_alarma.mp3');
+        // audio.play();
+    </script>
+</body>
+</html>
